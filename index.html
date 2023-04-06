@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./img/favicon_sotomayor.jpg" type="image/x-icon" />
+    <link rel="preconectar" href="https://fonts.googleapis.com" />
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https: //fonts.googleapis.com/css2? family= Lato:wght@400;700 & display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+    <title>Sotomayor Abogados</title>
 </head>
-<body>
-    
+<body class="body">
+    <header class="header" id="header">
+        <nav class="header-nav">
+            
+            <div class="figure-container">
+                <figure class="image__img-container">
+                    <img src="./img/logo.jpg" alt="logo" class="image__img" />
+                </figure>
+                <figure class="image__letters-container">
+                    <img src="./img/letras.png" alt="letras" class="image__letters" />
+                </figure>
+            </div>
+
+            <figure class="header-nav__menu-icon-container" id="headerNavMenu">
+                <img src="https://cdn-icons-png.flaticon.com/512/8771/8771165.png" alt="Menu Hamburguesa" class="header-nav__menu-icon" id=headerNavMenuIcon />
+            </figure>
+            
+            <ul class="header-nav__links-list" id="headerNavLinkList">
+                <li class="header-nav__link-link" id="#nosotros">
+                    <a href="#nosotros" class="header-nav__link-item">Nosotros</a>
+                </li>
+                <li class="header-nav__link-link" id="#miembros">
+                    <a href="#miembros" class="header-nav__link-item">Miembros</a>
+                </li>
+                <li class="header-nav__link-link" id="#servicios">
+                    <a href="#servicios" class="header-nav__link-item">Servicios</a>
+                </li>
+                <li class="header-nav__link-link" id="#blog">
+                    <a href="#blog" class="header-nav__link-item">Publicaciones</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero__content-container">
+                    <h1 class="hero__title">Ahorra tiempo & dinero en la asesoría que requieras</h1>
+                    <h3 class="hero__subtitle">Elija entre todas, la más seria y competente, y disfrute de la protección total de sus derechos, intereses & negocios</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="nosotros" id="nosotros">
+            <h3 class="nosotros__title">Quienes Somos</h3>
+            <div class="nosotros__information">
+                <figure class="nosotros__img-container">
+                    <img src="./img/image-nosotros.avif" alt="Foto" class="nosotros__img" />
+                </figure>
+                <p class="nosotros__content">
+                    Somos una firma de Asesoría Legal Integral, acompañamos a nuestros clientes en los negocios y todo tipo de actividades, de emprendimiento, buscando siempre que éstos lleguen al objetivo deseado por nuestro cliente, salvando en el camino engorrosos trámites administrativos y evitando en todo momento llegar a algún proceso judicial.
+                    Antes de tratar de resolver un problema administrativo, legal o un litigio, preferimos acompañar a nuestros clientes con la asesoría legal integral, administrativa, corporativa y demás, desde el inicio del negocio, desde el principio del emprendimiento hasta su correcta culminación y/o adecuado funcionamiento.
+                    Sin embargo, agotada las vías de solución administrativa, corporativa, conciliada y/o negociada, iniciamos las acciones legales judiciales correspondientes, como última opción y conociendo desde ya, el resultado esperado por nuestro cliente, garantizando el posterior cobro de las costas y costos del proceso.
+                </p>
+            </div>
+        </section>
+
+        <section class="miembros" id="miembros">
+            <h3 class="miembros__title">Miembros</h3>
+            <div class="miembros-container">
+                <div class="miembros__image-data">
+                    <figure class="miembros__image-container">
+                        <img src="./img/Carlos Sotomayor.png" alt="Carlos Sotomayor" class="miembros__image" />
+                    </figure>
+                    <p class="miembros__image-name-person">Socio Fundador</p>
+                </div>
+
+                <div class="miembros__information-container">
+                    <p class="miembros__information">
+                        CARLOS ALLEN SOTOMAYOR TORRES, abogado de la UNMSM, miembro del ilustre Colegio de Abogados de Lima. Experto y especialista en derecho constitucional, civil, municipal, administrativo, gestión pública, 
+                        inmobiliario, urbanístico, responsabilidad en la gestión pública y procesos administrativos disciplinarios; con más de veinte años de experiencia laboral.
+                    </p>
+                    <div class="miembros__buttons">
+                        <a href="https://carlossotomayortorres.blogspot.com/" class="miembros__blog-link" target="_blank">Mira mi blog</a>
+                        <button class="miembros__cv" id="boton">Acerca de mi</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios" id="servicios">
+            <h3 class="servicios__title">Publicaciones</h3>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0008.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0009.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0010.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0011.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0012.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0013.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./img/IMG-20230406-WA0014.jpg" alt="imagen" class="image___splide" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="blog" id="blog">
+            <h3 class="blog__title">Publicaciones</h3>
+            <div class="blog-container">
+                <figure class="blog__img-container">
+                    <img src="./img/new_image.jpg" alt="Libro UrbanLogia" class="blog__img" />
+                </figure>
+                <div class="blog__information">
+                    <h4 class="blog__title">URBANLOGIA: El derecho a la vida y los gobiernos locales</h4>
+                    <p class="blog__text">La declaración de abandono de las solicitudes de habilitación urbana es declarar el abandono de la ciudad</p>
+                    <p class="blog__text">Adquiere el libro en físico o digital</p>
+                    <div class="button__container">
+                        <a href="./index2.html" class="button__link" target="_blank">Me interesa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer-container">
+                <h3 class="footer__title">Contáctenos</h3>
+                <div class="footer__information">
+                    <p class="footer__mail">info@sotomayorasesores.com</p>
+                    <p class="footer__mail">consultas@sotomayorasesores.com</p>
+                    <p class="footer__phone">Telefono: (51) 996239524</p>
+                    <p class="footer__phone">Teléfono Fijo (01) 7749231</p>
+                    <p class="footer__address">Av. Alfredo Mendiola N° 333 - SMP.</p>
+                </div>
+            </div>
+            <p class="footer__cr">&copy; 2023 SotomayorAbogados </p>
+            <p class="footer__cr">Desarrollado por Gino Diez &copy; 2023 Todos los Derechos Reservados</p>
+        </div>
+    </footer>
+    <script>
+        var splide = new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+        } );
+
+        splide.mount();
+    </script>
 </body>
+<script src="./js/index.js"></script>
 </html>
